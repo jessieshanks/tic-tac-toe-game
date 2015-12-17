@@ -1,6 +1,11 @@
 
 //Declare Global Variables
 var gameBoard;
+var gameStats {
+  gamesPlayed: 0,
+  player1Wins: 0;
+  player2Wins: 0;
+}
 
 
 
@@ -47,6 +52,9 @@ function findWin(num) {
   return win;
 }
 
+function findWin2(num) {
+  win = winTest.some.call()
+}
 
 console.log(findWin(x));
 
