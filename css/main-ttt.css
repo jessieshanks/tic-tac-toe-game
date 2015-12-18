@@ -27,6 +27,9 @@ body {
   font-size: 30px;
   text-align: center;
   vertical-align: center;
+  width: 100%;
+  height: 380px;
+  margin: 8%;
   visibility: hidden;
 }
 
@@ -55,17 +58,19 @@ body {
   text-align: center;
   vertical-align: center;
   border-radius: 5%;
-  background-color: #EDEEC0;
-  border-width: medium;
+  background-color: white;
+  border: none;
+  box-shadow: none;
+  visibility: visible;
 }
 
     #player1-head {
-      color: #black;
+      color: #DA627D;
       border-color: #DA627D;
     }
 
     #player2-head {
-      color: #black;
+      color: #51A3A3;
       border-color: #51A3A3;
     }
 
