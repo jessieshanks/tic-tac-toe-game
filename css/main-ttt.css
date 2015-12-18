@@ -1,68 +1,85 @@
 
 body {
   margin: 2% 2% 2% 2%;
+  color:white;
 }
 
 .board-cell {
   background-color: darkGrey;
-  height: 100px;
-}
-
-.board-cellx {
-  background-color: darkGrey;
-  height: 100px;
-  padding: 5%;
-}
-
-.board-row {
-  padding-left:0;
-  padding-right:0;
-  float:none;
-  margin:auto;
+  height: 120px;
+  border-radius: 100%;
 }
 
 .name {
   text-align: center;
 }
 
-.name h1 {
-  font-size: 95px;
-}
+  .name h1 {
+    font-size: 95px;
+    color:#F79256;
+  }
 
-.winner-well, .stats-well {
-  font-size: 30px;
-  text-align: center;
-  vertical-align: center;
-}
-
-.player-label {
-  font-size: 30px;
-  text-align: center;
-  vertical-align: center;
-}
 
 .winner-well {
   background-color: white;
   color: white;
-  border-color: white;
+  border: none;
+  box-shadow: none;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: center;
 }
+
 
 .btn {
-  color: white;
   font-size: 20px;
   margin: .4% auto auto .4%;
-  align: center;
 }
 
-#reset-button {
-  background-color: darkGrey;
+    #start-button {
+      background-color: #F79256 ;
+      color: white;
+    }
+
+    #reset-button {
+      background-color: white;
+      border-color:#F79256;
+      color: #F79256;
+      border-size: 1%;
+    }
+
+
+
+.player-well {
+  font-size: 30px;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 0%;
 }
 
-#start-button {
-  background-color: green;
+    #player1-head {
+      background-color: #DA627D
+    }
+
+    #player2-head {
+      background-color: #51A3A3
+    }
+
+
+
+.stats-well {
+  background-color: white;
+  border: none;
+  box-shadow: none;
+  font-size: 40px;
+  text-align: center;
+  vertical-align: center;
 }
 
-.page-bottom {
-  display: flex;
-}
+    #player1-stats {
+      color: #DA627D;
+    }
 
+    #player2-stats {
+      color: #51A3A3;
+    }
