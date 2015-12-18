@@ -5,9 +5,10 @@ body {
 }
 
 .board-cell {
-  background-color: darkGrey;
+  background-color: darkGray;
   height: 120px;
   border-radius: 100%;
+  font-size: 0px;
 }
 
 .name {
@@ -21,13 +22,12 @@ body {
 
 
 .winner-well {
-  background-color: white;
+  background-color: #FFBC42;
   color: white;
-  border: none;
-  box-shadow: none;
   font-size: 30px;
   text-align: center;
   vertical-align: center;
+  visibility: hidden;
 }
 
 
@@ -51,18 +51,22 @@ body {
 
 
 .player-well {
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   vertical-align: center;
-  border-radius: 0%;
+  border-radius: 5%;
+  background-color: #EDEEC0;
+  border-width: medium;
 }
 
     #player1-head {
-      background-color: #DA627D
+      color: #black;
+      border-color: #DA627D;
     }
 
     #player2-head {
-      background-color: #51A3A3
+      color: #black;
+      border-color: #51A3A3;
     }
 
 
@@ -74,6 +78,7 @@ body {
   font-size: 40px;
   text-align: center;
   vertical-align: center;
+  visibility: hidden;
 }
 
     #player1-stats {
