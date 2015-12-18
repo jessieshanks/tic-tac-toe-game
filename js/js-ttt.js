@@ -1,13 +1,19 @@
 
 //Declare Global Variables
 var gameBoard;
-var gameStats {
+var gameStats = {
   gamesPlayed: 0,
-  player1Wins: 0;
-  player2Wins: 0;
+  player1Wins: 0,
+  player2Wins: 0,
 }
-
-
+var color = {
+  player1: "orange",
+  player2: "purple",
+  winner: "yellow",
+  cellHover: "lightBlue",
+}
+var playerTurn;
+var playerStart;
 
 function newBoard() {
 //resets game board
@@ -52,31 +58,55 @@ function findWin(num) {
   return win;
 }
 
-function findWin2(num) {
-  win = winTest.some.call()
+// function findWin2(num) {
+//   win = winTest.some.call()
+// }
+// console.log(findWin(x));
+
+
+function setPlayerColor() {
+  $('pLabel1').css("background-color":"color.player1");
+  $('pLabel2').css("background-color":color.player2);
+  $('player-label').css("color":"white" );
 }
 
-console.log(findWin(x));
+function newGame() {
+  gameStats.gamesPlayed += 1;
+  console.log("new Game");
+  newBoard();
+}
 
-//var winTest = {
-//  fuction ()
-//}
-
-
-//newBoard();
-consoleLogBoard();
-
-
-
+function newMatch() {
+  setPlayerColor();
+  newGame();
+}
 
 
 
+$(document).ready(function(){
 
-/*function checkWin(board, playerID) {
-  board [0][1] = playerID;
-  var win = {
-    .h0 = ( (board[0][0]===playerID) && (board[0][1]===playerID) && (board[0][2]===playerID) )
-    .h1 =
+
+  $('#start-button').on('click', function(){
+    if (gameStats.gamesPlayed=0)
+      newMatch()
+    } else {
+      newGame();
+  })
+
+  $('#reset-button').on('click', function(){
+      newMatch()
+  })
+
+})
+
+
+
+
+
+
+
+
+
 
 
 
